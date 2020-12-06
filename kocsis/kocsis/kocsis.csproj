@@ -73,6 +73,10 @@
     <Compile Include="car.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="enti\kocsi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="enti\kocsigyar.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

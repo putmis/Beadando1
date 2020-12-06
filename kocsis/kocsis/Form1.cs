@@ -1,4 +1,5 @@
-﻿using System;
+﻿using kocsis.enti;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,41 @@ namespace kocsis
         public Form1()
         {
             InitializeComponent();
+            Gyar = new kocsigyar();
+        }
+
+        private List<kocsi> _kocsik = new List<kocsi>();
+
+        private kocsigyar _gyar;
+        public kocsigyar Gyar
+        {
+            get { return _gyar; }
+            set { _gyar = value; }
+        }
+
+        private void createtimer_Tick(object sender, EventArgs e)
+        {
+            var kocsi = Gyar.CreateNew();
+            _kocsik.Add(kocsi);
+            kocsi.Left = -kocsi.Width;
+            panel1.Controls.Add(kocsi);
+        }
+
+        private void conveyortimer_Tick(object sender, EventArgs e)
+        {
+            var maxHely = 0;
+            foreach (var ball in _kocsik)
+            {
+                ball.MoveKocsi();
+                if (ball.Left > maxHely)
+                    maxHely = ball.Left;
+            }
+            if (maxHely > 1000)
+            {
+                var regi = _kocsik[0];
+                panel1.Controls.Remove(regi);
+                _kocsik.Remove(regi);
+            }
         }
     }
 }

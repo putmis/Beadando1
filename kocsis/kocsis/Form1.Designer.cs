@@ -28,13 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.createtimer = new System.Windows.Forms.Timer(this.components);
+            this.conveyortimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(0, 201);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(802, 153);
+            this.panel1.TabIndex = 0;
+            // 
+            // createtimer
+            // 
+            this.createtimer.Enabled = true;
+            this.createtimer.Interval = 3000;
+            this.createtimer.Tick += new System.EventHandler(this.createtimer_Tick);
+            // 
+            // conveyortimer
+            // 
+            this.conveyortimer.Enabled = true;
+            this.conveyortimer.Interval = 10;
+            this.conveyortimer.Tick += new System.EventHandler(this.conveyortimer_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +66,10 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer createtimer;
+        private System.Windows.Forms.Timer conveyortimer;
     }
 }
 
