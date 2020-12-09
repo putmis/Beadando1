@@ -45,12 +45,24 @@ namespace kocsis
                 if (ball.Left > maxHely)
                     maxHely = ball.Left;
             }
-            if (maxHely > 1000)
+            if (maxHely > 850)
             {
                 var regi = _kocsik[0];
                 panel1.Controls.Remove(regi);
                 _kocsik.Remove(regi);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Autovalasztas aut = new Autovalasztas();
+            aut.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           F3 aut = new F3();
+            aut.Show();
         }
     }
 }
