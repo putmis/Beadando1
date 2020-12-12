@@ -26,7 +26,17 @@ namespace kocsis
         private void szam()
         {
 
-            double km = Convert.ToDouble(textBox2.Text);
+            textBox2.Text = "hajrá";
+            textBox3.Text = textBox2.Text;
+
+
+
+            //double km =double.Parse(textBox2.Text);
+            //double fogy = double.Parse(textBox3.Text);
+            //double ar = double.Parse(textBox4.Text);
+
+            //textBox5.Text = ((km / fogy) * ar).ToString();
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

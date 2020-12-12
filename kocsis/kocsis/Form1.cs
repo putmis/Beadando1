@@ -17,7 +17,11 @@ namespace kocsis
         {
             InitializeComponent();
             Gyar = new kocsigyar();
-          
+            BackColor = Color.FromArgb(13,239,1);
+            button1.BackColor = Color.FromArgb(252,252,252);
+            button2.BackColor = Color.FromArgb(252,252,252);
+            
+
         }
 
         private List<kocsi> _kocsik = new List<kocsi>();
@@ -40,11 +44,11 @@ namespace kocsis
         private void conveyortimer_Tick(object sender, EventArgs e)
         {
             var maxHely = 0;
-            foreach (var ball in _kocsik)
+            foreach (var tutu in _kocsik)
             {
-                ball.MoveKocsi();
-                if (ball.Left > maxHely)
-                    maxHely = ball.Left;
+                tutu.MoveKocsi();
+                if (tutu.Left > maxHely)
+                    maxHely = tutu.Left;
             }
             if (maxHely > 850)
             {

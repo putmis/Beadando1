@@ -24,6 +24,10 @@ namespace kocsis
             Getkocsik();
             gettorles();
             listBox1.ValueMember = "ID";
+            BackColor = Color.FromArgb(13, 239, 1);
+            button1.BackColor = Color.FromArgb(7, 203, 214);
+            button2.BackColor = Color.FromArgb(7, 203, 214);
+            dataGridView1.BackgroundColor=Color.FromArgb(7, 203, 214);
         }
 
         private void Getkocsik()
@@ -93,14 +97,7 @@ namespace kocsis
             gettorles();
 
 
-            //private void textBox2_TextChanged(object sender, EventArgs e)
-            //{
-            //    listBox1.DataSource = (from x in context.cars
-            //                                where x.AutoNeve.StartsWith(textBox2.Text)
-            //                                select x).ToList();
-            //    listBox1.DisplayMember = "AutoNeve";
-            //    dataGridView1.DataSource =listBox1.SelectedIndex;
-            //}
+          
         }
     }
 }
