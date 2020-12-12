@@ -10,11 +10,43 @@ using System.Windows.Forms;
 
 namespace kocsis
 {
-    public partial class F3 : Form
+    public partial class F3 :Form
     {
+       
         public F3()
         {
             InitializeComponent();
+            szam();
+          
+
+
+
+        }
+
+        private void szam()
+        {
+
+            double km = Convert.ToDouble(textBox2.Text);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            szam();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            szam();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            szam();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            szam();
         }
     }
 }

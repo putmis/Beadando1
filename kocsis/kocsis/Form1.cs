@@ -17,6 +17,7 @@ namespace kocsis
         {
             InitializeComponent();
             Gyar = new kocsigyar();
+          
         }
 
         private List<kocsi> _kocsik = new List<kocsi>();
@@ -64,5 +65,6 @@ namespace kocsis
            F3 aut = new F3();
             aut.Show();
         }
+      
     }
 }
