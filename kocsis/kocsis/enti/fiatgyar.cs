@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace kocsis.enti
 {
-   public class kocsigyar: tutukFactory
+  public  class fiatgyar: tutukFactory
     {
         public tutuk CreateNew()
         {
-            return new kocsi();
+            return new fiat();
         }
     }
 }

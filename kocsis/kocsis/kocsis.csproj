@@ -70,13 +70,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="absztrakt\tutuk.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="absztrakt\tutukFactory.cs" />
     <Compile Include="car.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="enti\fiat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="enti\fiatgyar.cs" />
     <Compile Include="enti\kocsi.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="enti\kocsigyar.cs" />
+    <Compile Include="enti\suzuki.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="enti\suzukigyar.cs" />
     <Compile Include="F3.cs">
       <SubType>Form</SubType>
     </Compile>
