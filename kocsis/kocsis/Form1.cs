@@ -19,9 +19,13 @@ namespace kocsis
         {
             InitializeComponent();
             Gyar = new kocsigyar();
-            BackColor = Color.FromArgb(13,239,1);
-            button1.BackColor = Color.FromArgb(252,252,252);
-            button2.BackColor = Color.FromArgb(252,252,252);
+            //BackColor = Color.FromArgb(13,239,1);
+            button1.BackColor = Color.FromArgb(252,234,109);
+            button2.BackColor = Color.FromArgb(252, 234, 109);
+            button3.BackColor = Color.FromArgb(252, 234, 109);
+            button4.BackColor = Color.FromArgb(252, 234, 109);
+            button5.BackColor = Color.FromArgb(252, 234, 109);
+            BackgroundImage = Image.FromFile("hatter.png");
             
 
         }
@@ -34,6 +38,7 @@ namespace kocsis
         {
             get { return _gyar; }
             set { _gyar = value;
+                kovi();
             
             }
         }

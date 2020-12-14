@@ -13,7 +13,7 @@ namespace kocsis.absztrakt
         public tutuk()
         {
             AutoSize = false;
-            Width = 100;
+            Width = 50;
             Height = Width;
             Paint += Tutuk_Paint;
         }

@@ -17,7 +17,7 @@ namespace kocsis
         {
             InitializeComponent();
             szam();
-          
+            BackgroundImage = Image.FromFile("kut.png");
 
 
 

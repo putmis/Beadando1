@@ -24,10 +24,11 @@ namespace kocsis
             Getkocsik();
             gettorles();
             listBox1.ValueMember = "ID";
-            BackColor = Color.FromArgb(13, 239, 1);
+            BackgroundImage = Image.FromFile("back.png");
             button1.BackColor = Color.FromArgb(7, 203, 214);
             button2.BackColor = Color.FromArgb(7, 203, 214);
             dataGridView1.BackgroundColor=Color.FromArgb(7, 203, 214);
+            
         }
 
         private void Getkocsik()
@@ -88,9 +89,9 @@ namespace kocsis
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int oID = Convert.ToInt32(listBox1.SelectedValue);
+            int d = Convert.ToInt32(listBox1.SelectedValue);
             var ad = from x in context.cars
-                     where x.Id == oID
+                     where x.Id == d
                      select x;
             context.cars.Remove(ad.FirstOrDefault());
             context.SaveChanges();
@@ -99,5 +100,7 @@ namespace kocsis
 
           
         }
+
+      
     }
 }
