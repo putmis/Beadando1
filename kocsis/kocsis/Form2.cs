@@ -27,8 +27,11 @@ namespace kocsis
             BackgroundImage = Image.FromFile("back.png");
             button1.BackColor = Color.FromArgb(7, 203, 214);
             button2.BackColor = Color.FromArgb(7, 203, 214);
+            button3.BackColor = Color.FromArgb(7, 203, 214);
             dataGridView1.BackgroundColor=Color.FromArgb(7, 203, 214);
+            button4.BackColor = Color.FromArgb(7, 203, 214);
             
+
         }
 
         private void Getkocsik()
@@ -101,6 +104,46 @@ namespace kocsis
           
         }
 
-      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            carBindingSource.EndEdit();
+            try
+            {
+                context.SaveChanges();           
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            dataGridView1.Refresh();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            autohozzaad ad = new autohozzaad();
+            DialogResult result = ad.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+
+
+                car auto = new car();
+                auto.AutoNeve = ad.Nev.Text;
+                auto.Üzemanyag = ad.anyag.Text;
+                auto.Fogyasztas = Convert.ToDecimal(ad.fogyaszt.Text);
+                auto.Kor = Convert.ToByte(ad.kor.Text);
+
+                carBindingSource.Add(auto);
+
+
+
+
+               
+
+
+
+            }
+        }
     }
 }
