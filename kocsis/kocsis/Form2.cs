@@ -24,7 +24,7 @@ namespace kocsis
             Getkocsik();
             gettorles();
             listBox1.ValueMember = "ID";
-            BackgroundImage = Image.FromFile("back.png");
+            BackgroundImage = Image.FromFile("C:/Users/ToshibaC850/Desktop/Puter Mihály/irf uj/kocsis/kocsis/Images/back.png");
             button1.BackColor = Color.FromArgb(7, 203, 214);
             button2.BackColor = Color.FromArgb(7, 203, 214);
             button3.BackColor = Color.FromArgb(7, 203, 214);

@@ -17,7 +17,7 @@ namespace kocsis
         {
             InitializeComponent();
             szam();
-            BackgroundImage = Image.FromFile("kut.png");
+            BackgroundImage = Image.FromFile("C:/Users/ToshibaC850/Desktop/Puter Mihály/irf uj/kocsis/kocsis/Images/kut.png");
 
 
 
@@ -26,8 +26,7 @@ namespace kocsis
         private void szam()
         {
 
-            //textBox2.Text = "hajrá";
-            //textBox3.Text = textBox2.Text;
+           
 
 
             int a = 100;

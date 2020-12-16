@@ -12,7 +12,7 @@ namespace kocsis.enti
     {
         protected override void DrawImage(Graphics g)
         {
-            Image imageFile = Image.FromFile("fiat.png");
+            Image imageFile = Image.FromFile("C:/Users/ToshibaC850/Desktop/Puter Mihály/irf uj/kocsis/kocsis/Images/fiat.png");
             g.DrawImage(imageFile, new Rectangle(0, 0, Width, Height));
         }
     }

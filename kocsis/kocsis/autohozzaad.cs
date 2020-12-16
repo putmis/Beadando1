@@ -16,7 +16,7 @@ namespace kocsis
         public autohozzaad()
         {
             InitializeComponent();
-            BackgroundImage = Image.FromFile("hat.png");
+            BackgroundImage = Image.FromFile("C:/Users/ToshibaC850/Desktop/Puter Mihály/irf uj/kocsis/kocsis/Images/hat.png");
             button1.BackColor = Color.FromArgb(252, 234, 109);
             button2.BackColor = Color.FromArgb(252, 234, 109);
         }

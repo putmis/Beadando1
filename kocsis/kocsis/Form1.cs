@@ -25,7 +25,7 @@ namespace kocsis
             button3.BackColor = Color.FromArgb(252, 234, 109);
             button4.BackColor = Color.FromArgb(252, 234, 109);
             button5.BackColor = Color.FromArgb(252, 234, 109);
-            BackgroundImage = Image.FromFile("hatter.png");
+            BackgroundImage = Image.FromFile("C:/Users/ToshibaC850/Desktop/Puter Mihály/irf uj/kocsis/kocsis/Images/hatter.png");
             
 
         }
